@@ -1,0 +1,70 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: #161623;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.content_title{
+  font-size: 50px;
+}
+
+.content_description{
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.form .form_input{
+  max-width: 600px;
+  min-width: 500px;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: 600;
+  height: 38px;
+  outline: none;
+  border: none;
+  text-indent: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.form .form_input::placeholder{
+  color: rgb(138, 138, 138);
+  font-weight: 600;
+}
+
+.form .form_button{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #052fda;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+/* 
+.downlaod_btn{
+  text-decoration: none;
+} */
