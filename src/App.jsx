@@ -31,12 +31,13 @@ function App() {
 
   return (
     <div className="app">
-      <span className="logo">youtube2mp3</span>
       <section className="content">
-        <h1 className="content_title">YouTube to MP3 Converter</h1>
-        <p className="content_description">
-          Transform YouTube videos into MP3s in just a few clicks!
-        </p>
+        <h1 className="content_title">Download Your Youtube Music!</h1>
+        <header>
+          <div className="header-text">
+            <p>Download <span></span></p>
+          </div>
+        </header>
 
         <form onSubmit={handleSubmit} className="form">
           <input ref={inputUrlRef} placeholder="Paste a Youtube video URL link..." className="form_input" type="text" />
@@ -44,7 +45,7 @@ function App() {
         </form>
 
         {urlResult ? <a target='_blank' rel="noreferrer" href={urlResult} className="download_btn">Download MP3</a> : ''}
-        
+
       </section>
     </div>
   )

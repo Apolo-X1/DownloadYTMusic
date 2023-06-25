@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Comic Sans MS";
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -17,23 +17,17 @@ body {
   padding-top: 100px;
 }
 
-.content_title{
+.content_title {
   font-size: 50px;
 }
 
-.content_description{
-  position: relative;
-  top: -40px;
-  font-size: 20px;
-}
-
-.form{
+.form {
   display: flex;
   flex-direction: column;
   place-items: center;
 }
 
-.form .form_input{
+.form .form_input {
   max-width: 600px;
   min-width: 500px;
   background-color: #f1f1f1;
@@ -48,12 +42,12 @@ body {
   margin-bottom: 1rem;
 }
 
-.form .form_input::placeholder{
+.form .form_input::placeholder {
   color: rgb(138, 138, 138);
   font-weight: 600;
 }
 
-.form .form_button{
+.form .form_button {
   width: 100px;
   height: 30px;
   border-radius: 5px;
@@ -64,7 +58,97 @@ body {
   margin-bottom: 4rem;
 }
 
-/* 
-.downlaod_btn{
-  text-decoration: none;
-} */
+
+/* download */
+.download_btn {
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid #cb134e;
+  display: inline-block;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* typing  */
+.header-text {
+  font-size: 20px;
+  font-weight: 900px;
+  position: relative;
+  top: -40px;
+
+}
+
+.header-text p {
+  color: white;
+}
+
+.header-text span {
+  position: relative;
+}
+
+.header-text span::before {
+  content: "Encryptor";
+  color: aqua;
+  animation: words 60s infinite;
+}
+
+.header-text span::after {
+  content: "";
+  background-color: #161623;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 2px solid aqua;
+  right: -8px;
+  animation: cursor .6s infinite, typing 40s steps(24) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #052fda;
+  }
+}
+
+@keyframes words {
+
+  0%,
+  100% {
+    content: "without viruses, without ads and totally free!";
+  }
+}
+
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
