@@ -37,11 +37,11 @@ Technologies used: HTML, CSS, JavaScript.
 
 ## Installation and Execution
 run in the terminal the next commands:
--npm create vite@latest
--select react
--later javascript
--npm install
+- npm create vite@latest
+- select react
+- later javascript
+- npm install
 
 for executed:
--npm run dev
+- npm run dev
 
